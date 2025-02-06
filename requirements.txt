@@ -1,0 +1,13 @@
+selenium
+amazoncaptcha
+pandas 
+numpy
+langchain-community
+huggingface-hub
+langchain-nvidia-ai-endpoints
+python-dotenv
+Pinecone
+langchain-pinecone
+langchain-groq 
+Flask 
+-e .
