@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Ecommerce Customer Service Chatbot</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/hp_style.css')}}">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="topbar">
+                <div class="logo">
+                </div>
+                <h1></h1>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="https://github.com/Dhanush-Raj1/Ecommerce-Chatbot-Project" target="_blank"><i class="fab fa-github"></i> Github</a></li>
+                        <li><a href="">Get in touch</a></li>
+                        <!--Dropdown menu-->
+                        <li>
+                            <a href="">Categories<i class="fa-solid fa-square-caret-down" style="color: rgb(131, 129, 129);"></i></a>  
+                            <ul class="dropdown-categories">
+                                <li><a href="#men">Men's</a></li>
+                                <li><a href="#women">Women's</a></li>
+                                <li><a href="#accessories">Accessories</a></li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <a href="">Menu <i class="fa-solid fa-square-caret-down" style="color: rgb(131, 129, 129);"></i></a>  
+                            <ul class="dropdown-menu">
+                                <li><a href="#about-section">About Us</a></li>
+                                <li><a href="#footer">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="img-left">
+                <h3>Awesome and new collections</h3>
+                <p>Purchase Now!</p>
+            </div>
+            <div class="img-right-1">
+                <h4>Men's</h4>
+                <p>Formal shirts for men</p>
+            </div>
+            <div class="img-right-2">
+                <h4>Women's</h4>
+                <p>Sarees for women</p>
+            </div>
+            <div class="img-right-3">
+                <h4>Accessories</h4>
+                <p>Watches, Glasses, Belts</p>
+            </div>
+            <!--div class="img-right-4">
+                <h4>Kid's</h4>
+                <p>Dresses for kids</p>
+            </div-->
+        </main>
+
+        <!--Mens section-->
+        <section id="men" class="men">
+            <div class="title">
+                <h2>Men's </h2>
+                <p>Branded formal shirts for men</p>
+            </div>
+            <!--Product 1-->
+            <div class="men-products">  
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/shirt-01.png" alt="Symbol premium wrinkle free shirt">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Symbol Premium</div>
+                        <div class="product-name">Men's Wrinkle-Resistant Regular Fit Cotton Formal Shirt</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(499)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,699</span>
+                            <span class="mrp">₹2,599</span>
+                            <span class="offer">(35% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/shirt-02.png" alt="Premium non iron shirt">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Symbol Premium</div>
+                        <div class="product-name">Men's Cotton Non-Iron Formal Shirt (Regular Fit | Solid)</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(70)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,899</span>
+                            <span class="mrp">₹3,999</span>
+                            <span class="offer">(53% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/shirt-03.png" alt="Symbol Cotton rich shirt">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Amazon Brand - Symbol</div>
+                        <div class="product-name">Men's Solid Cotton Rich Formal Shirt | Plain | Full Sleeve-Regular Fit</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(10,355)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹549</span>
+                            <span class="mrp">₹1,699</span>
+                            <span class="offer">(68% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/shirt-04.png" alt="Amazon-brand symbol premium shirt">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Amazon Brand - Symbol</div>
+                        <div class="product-name">Men's Solid Cotton Formal Shirt | Plain | Full Sleeve-Regular Fit</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(8,650)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹599</span>
+                            <span class="mrp">₹1,799</span>
+                            <span class="offer">(67% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/shirt-05.png" alt="Generic Luster Cotton shirt">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Generic</div>
+                        <div class="product-name">Stylish Men's Luster Cotton Blend Shirt - Comfortable & Durable</div>
+                        <div class="rating">
+                            ★★★☆☆ <span class="rating-count">(8)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹499</span>
+                            <span class="mrp">₹999</span>
+                            <span class="offer">(50% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/shirt-06.png" alt="Peter England shirt">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Peter England</div>
+                        <div class="product-name">Men's Everday Regular Fit Solid Shirt | Cotton Rich | 5-Pin Pocketing</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(1,003)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹789</span>
+                            <span class="mrp">₹1,399</span>
+                            <span class="offer">(44% off)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="women" class="women">
+            <div class="title">
+                <h2>Women's </h2>
+                <p>Sarees for women</p>
+            </div>
+            <div class="women-products">  
+                <!--Product 1-->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/saree-01.png" alt="SGF11 Kanjivaram Pure Soft Silk Handloom Saree">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">SGF11</div>
+                        <div class="product-name">Women's Kanjivaram Pure Soft Silk Handloom Saree Pure Golden Zari With Blouse Piece</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(769)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,499</span>
+                            <span class="mrp">₹5,999</span>
+                            <span class="offer">(75% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/saree-02.png" alt="SGF11 Kanjivaram Woven Soft Silk Saree">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">SGF11</div>
+                        <div class="product-name">Women's Kanjivaram Woven Soft Silk Saree With Blouse Piece</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(1,948)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,699</span>
+                            <span class="mrp">₹8,999</span>
+                            <span class="offer">(81% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/saree-03.png" alt="Generic Traditional Art Cotton Saree">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Generic</div>
+                        <div class="product-name">Traditional Art cotton Saree with Elephant and Peacock Print zari Border, Green and Gold, with Matching Blouse Piece</div>
+                        <div class="rating">
+                            <span class="rating-count">New Arrival</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹990</span>
+                            <span class="mrp">₹1,600</span>
+                            <span class="offer">(38% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/saree-04.png" alt="Vintro Digital Print Saree">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Vintro</div>
+                        <div class="product-name">Women's bollywood japani satin digital print saree with unstitched blouse piece</div>
+                        <div class="rating">
+                            <span class="rating-count">New Arrival</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,379</span>
+                            <span class="mrp">₹4,599</span>
+                            <span class="offer">(70% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/saree-05.png" alt="C J Enterprise Kanjivaram Art Silk Saree">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">C J Enterprise</div>
+                        <div class="product-name">Women's Kanjivaram Art Silk Saree Soft Banarasi Style Sari With Blouse Piece For Wedding (Pari122-51)</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(1,418)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹499</span>
+                            <span class="mrp">₹999</span>
+                            <span class="offer">(50% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/saree-06.png" alt="SGF11 Kanjivaram Soft Silk Saree">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">SGF11</div>
+                        <div class="product-name">Women's Kanjivaram Soft Silk Saree With Blouse Piece</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(1,507)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹699</span>
+                            <span class="mrp">₹8,999</span>
+                            <span class="offer">(92% off)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+
+
+
+        <!--Watches section-->
+        <section id="accessories" class="accessories">
+            <div class="title">
+                <h2>Accessories</h2>
+                <p>Watches for men</p>
+            </div>
+            <div class="accessories-products">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/watch-01.png" alt="Fire-Boltt Phoenix Ultra">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Fire-Boltt</div>
+                        <div class="product-name">Phoenix Ultra Luxury Stainless Steel, Bluetooth Calling Smart Watch, AI Voice Assistant</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(49,216)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,699</span>
+                            <span class="mrp">₹12,499</span>
+                            <span class="offer">(86% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/watch-02.png" alt="Fire-Boltt Ninja Call Pro Max">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Fire-Boltt</div>
+                        <div class="product-name">Ninja Call Pro Max Smart Watch 2.01 inch Display, Bluetooth Calling</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(43,759)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,299</span>
+                            <span class="mrp">₹14,999</span>
+                            <span class="offer">(91% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/watch-03.png" alt="Fire-Boltt Dominian">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Fire-Boltt</div>
+                        <div class="product-name">Dominian 36.3mm AMOLED Display, Stainless Steel Design</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(897)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹2,299</span>
+                            <span class="mrp">₹21,000</span>
+                            <span class="offer">(89% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/watch-04.png" alt="Noise Halo 2">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Noise</div>
+                        <div class="product-name">Halo 2 Smart Watch 1st Ever Functional Rotating Dial, 1.43" AMOLED</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(363)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹4,999</span>
+                            <span class="mrp">₹6,999</span>
+                            <span class="offer">(29% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/watch-05.png" alt="boAt Lunar Discovery">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">boAt</div>
+                        <div class="product-name">Lunar Discovery w/ 1.39" HD Display, Turn-by-Turn Navigation</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(21,478)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,399</span>
+                            <span class="mrp">₹8,499</span>
+                            <span class="offer">(84% off)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/watch-06.png" alt="Titan Karishma">
+                    </div>
+                    <div class="product-details">
+                        <div class="brand-name">Titan</div>
+                        <div class="product-name">Karishma Analog Black Dial Men's Watch</div>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(2,135)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="selling-price">₹1,795</span>
+                            <span class="mrp">₹1,995</span>
+                            <span class="offer">(10% off)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!--about us -->
+        <section id="about-section" class="about-section">
+            <div class="about-container">
+                <h2 class="about-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Revolutionizing E-commerce Customer Service</h3>
+                        <p>Welcome to E-commerce Chatbot, where artificial intelligence meets exceptional customer service. We're dedicated to transforming the online shopping experience through our intelligent, responsive, and efficient chatbot solutions.</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">💬</div>
+                                <h4>24/7 Customer Support</h4>
+                                <p>Our AI chatbots provide instant responses to customer queries around the clock, ensuring no question goes unanswered.</p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">🎯</div>
+                                <h4>Smart Product Recommendations</h4>
+                                <p>Get personalized product suggestions based on your preferences and browsing history.</p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">📦</div>
+                                <h4>Order Management</h4>
+                                <p>Place orders, track shipments, and access invoices seamlessly through our chatbot interface.</p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">🔍</div>
+                                <h4>Product Information</h4>
+                                <p>Detailed product information, specifications, and availability status at your fingertips.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer Section -->
+        <footer id="footer" class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="../static/images/logo.png" alt="E-commerce Chatbot" class="footer-logo">
+                    </div>
+                    <ul>
+                        <li><a href="#">123 AI Street, Tech City, CA 94016, INDIA</a></li>
+                        <li><a href="mailto:support@ecomchatbot.com">dhanush1004raj@gmail.com</a></li>
+                        <li><a href="tel:+18001234567">+1 800 123 4567</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-column">
+                    <h4>Shopping & Categories</h4>
+                    <ul>
+                        <li><a href="#">Men's Fashion</a></li>
+                        <li><a href="#">Women's Fashion</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-column">
+                    <h4>Help & Information</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>Copyright © 2024 E-commerce Chatbot. All Rights Reserved.</p>
+                <p>Developed by <a href="https://github.com/Dhanush-Raj1" target="_blank" class="developer-link">Dhanush-Raj</a></p>
+            </div>
+        </footer>
+        
+
+
+        <!--Chatbot UI-->
+        <div class="welcome-popup">
+            <button class="close-popup">×</button>
+            <p class="welcome-message">Need help? I'm here to assist you! 👋</p>
+        </div>
+    
+        <!-- Chatbot Logo -->
+        <div class="chatbot-logo">
+            <img src="../static/images/chatbot-icon-1.png" alt='chatbot logo'>
+        </div>
+    
+        <!-- Chatbot Widget -->
+        <div class="chat-widget">
+            <div class="chat-header">
+                <h3>
+                    <img src="../static/images/chatbot-icon.png" alt="Chatbot Logo">
+                    Customer Support
+                </h3>
+                <button class="close-popup">×</button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot-message">
+                    Hello! How can I help you today?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button>Send</button>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+   
+    </body>
+</html>
