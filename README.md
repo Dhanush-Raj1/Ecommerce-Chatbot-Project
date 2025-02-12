@@ -20,7 +20,14 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - **Pinecone** (Vector database for retrieval)
 - **HTML & CSS** (Frontend for chatbot UI)
 - **GROQ API** (GROQ for accessing Llama 3.3 70b model) 
-  
+
+
+## :triangular_flag_on_post: Working with the chatbot  
+- Chat in natural language.  
+- Ask any kind of questions related to any products to the chatbot. Some products are listed in the website mention the product name or other details and ask further questions about the product.  
+- Make orders.  
+- Ask for invoice of your order.  
+- Ask for recommendation for example: Recommend me a shirt under the budget of rupees 1000 but above rupees 500.   
   
 ## :bricks: Project Overview:    
 ## 1. Data Collection: 
