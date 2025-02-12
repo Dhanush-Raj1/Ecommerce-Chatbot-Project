@@ -1,4 +1,6 @@
 import sys 
+
+from src.components.data_cleaning import DataCleaner
 from src.components.vectorstore_builder import DataPipeline
 from src.components.chatbot_builder import ChatbotBuilder
 
@@ -10,17 +12,18 @@ load_dotenv()
 
 def main():
     try:    
+        data_cleaner = DataCleaner()
+        data_cleaner.clean_data(r"F:\Data Science\Projects\Ecommerce-Chatbot-Project\Data")
+
         data_pipeline = DataPipeline()
-        vector_store = data_pipeline.run_pipeline(r"F:\Data Science\Projects\Ecommerce-Chatbot-Project\Data")
+        vector_store = data_pipeline.run_pipeline(r"F:\Data Science\Projects\Ecommerce-Chatbot-Project\Data\data_cleaned.csv")
 
         chatbot_builder = ChatbotBuilder()
         chatbot = chatbot_builder.build_chatbot(vector_store)
 
         # test code
-        test_input = "What do you do?"
         test_response = chatbot.invoke({"input": "What do you do?"})
 
-        logging.info(f"Test Input: {test_input}")
         logging.info(f"Test Response: {test_response}")
         print("Test response: ", test_response)
 
