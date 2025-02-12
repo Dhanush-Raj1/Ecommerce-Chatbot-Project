@@ -1030,7 +1030,7 @@ html {
 .dot {
     width: 8px;
     height: 8px;
-    background: #90959f;
+    background: #ffffff;
     border-radius: 50%;
     animation: bounce 1s infinite;
 }
