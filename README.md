@@ -65,8 +65,11 @@ An AI-powered customer service chatbot for e-commerce, built using **LangChain, 
 
 
 ## 📸 Screenshots
-<img src="readme_images/screenshot_1.PNG" width="450" height="450">
-<img src="readme_images/screenshot_2.PNG" width="450" height"450">
+- Screenshot of the website:
+<img src="readme_images/screenshot_1.PNG" width="650" height="550">
+
+- Screenshot of the chatbot: (Click the icon on the right bottom of the screen to open the chatbot)
+<img src="readme_images/screenshot_2.PNG" width="550" height"450">
 
 ## 🎯 Future Enhancements
 - Support for more product categories
