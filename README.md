@@ -25,20 +25,20 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 ## :bricks: Project Overview:    
 **1. Data Collection:** 
     
-    - The first step in our project was collecting product data from Amazon. This data includes product details, pricing, and other metadata.       
-    - I used selenium to automate the webscraping process.    
-    - collected real-world product data from Amazon using Selenium for web scraping. The dataset includes details for:    
-          - Men's Formal Shirts    
-          - Women's Sarees    
-          - Men's Watches    
-    - For each product, the following attributes were extracted:  
-          - Brand Name  
-          - Product Name  
-          - Rating  
-          - Rating Count  
-          - Selling Price  
-          - MRP (Maximum Retail Price)  
-          - Offer/Discount  
+- The first step in our project was collecting product data from Amazon. This data includes product details, pricing, and other metadata.       
+- I used selenium to automate the webscraping process.    
+- collected real-world product data from Amazon using Selenium for web scraping. The dataset includes details for:    
+    - Men's Formal Shirts    
+    - Women's Sarees    
+    - Men's Watches    
+- For each product, the following attributes were extracted:  
+    - Brand Name  
+    - Product Name  
+    - Rating  
+    - Rating Count  
+    - Selling Price  
+    - MRP (Maximum Retail Price)  
+    - Offer/Discount  
   
 **2. Data Cleaning:**  
     
