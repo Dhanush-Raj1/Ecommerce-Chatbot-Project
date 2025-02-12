@@ -22,8 +22,8 @@ An AI-powered customer service chatbot for e-commerce, built using **LangChain, 
 - **GROQ API** (GROQ for accessing Llama 3.3 70b model) 
 
 
-## Project Overview:
-1. Data Collection
+## :bricks: Project Overview:
+### 1. Data Collection
     - The first step in our project was collecting product data from Amazon. This data includes product details, pricing, and other metadata.
     - I used selenium to automate the webscraping process.
     - collected real-world product data from Amazon using Selenium for web scraping. The dataset includes details for:
