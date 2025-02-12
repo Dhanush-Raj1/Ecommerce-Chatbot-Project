@@ -23,7 +23,7 @@ An AI-powered customer service chatbot for e-commerce, built using **LangChain, 
 
 
 ## :bricks: Project Overview:  
-### 1. Data Collection:    
+**1. Data Collection:**    
     - The first step in our project was collecting product data from Amazon. This data includes product details, pricing, and other metadata.  
     - I used selenium to automate the webscraping process.  
     - collected real-world product data from Amazon using Selenium for web scraping. The dataset includes details for:  
@@ -65,8 +65,8 @@ An AI-powered customer service chatbot for e-commerce, built using **LangChain, 
 
 
 ## 📸 Screenshots
-- <img src="readme_images/screenshot_1.png" width="450" height="450">
-- <img src="readme_images/screenshot_2.png" width="450" height"450">
+<img src="readme_images/screenshot_1.PNG" width="450" height="450">
+<img src="readme_images/screenshot_2.PNG" width="450" height"450">
 
 ## 🎯 Future Enhancements
 - Support for more product categories
