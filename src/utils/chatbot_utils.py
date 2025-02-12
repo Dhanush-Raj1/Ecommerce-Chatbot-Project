@@ -82,11 +82,11 @@ class BuildRetrievalchain:
                 1. Product Information & Recommendations
                    - ONLY provide details explicitly mentioned in the context
                    - Format prices exactly as shown in the context
-                   
                 
                 2. Order Processing
                    - Accept multiple items in a single order
                    - Confirm the order. If the customer/user buy more than 10 pieces of the same product respond "Currenlty we have only 10 pieces of the product <product which customer requested>"
+                     NOTE: every product has 10 pieces as its stock, you have to keep track of the stock and if the product is out of stock, just say so.
                    - Calculate accurate totals including any applicable taxes/shipping. The tax rate is 5% and 5% of tax to every order.
                    - Generate order confirmation with unique order ID. The order ID should be like this "Order-No-1", change the "1" to "2" and "2" to "3".... for new orders
                 
