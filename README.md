@@ -2,7 +2,7 @@
 
 # 🛍️ E-Commerce Chatbot
 
-An AI-powered customer service chatbot for e-commerce, built using **LangChain, Pinecone, Groq, llama3.3 70b model**. The chatbot provides product recommendations, processes orders, tracks shipments, and remembers past conversations for a seamless user experience.
+An GenAI-powered customer service chatbot for e-commerce, built using **LangChain, Pinecone, Groq, llama3.3 70b model**. The chatbot provides product recommendations, processes orders, tracks shipments, and remembers past conversations for a seamless user experience.
 
 
 ## 🚀 Features
@@ -23,8 +23,8 @@ An AI-powered customer service chatbot for e-commerce, built using **LangChain, 
 
 
 ## :bricks: Project Overview:  
-**1. Data Collection:**    
-    - The first step in our project was collecting product data from Amazon. This data includes product details, pricing, and other metadata.     
+**1. Data Collection:**        
+    - The first step in our project was collecting product data from Amazon. This data includes product details, pricing, and other metadata.       
     - I used selenium to automate the webscraping process.    
     - collected real-world product data from Amazon using Selenium for web scraping. The dataset includes details for:    
           - Men's Formal Shirts    
