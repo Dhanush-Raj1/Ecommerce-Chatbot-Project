@@ -3,7 +3,6 @@ import sys
 
 from typing import List
 import time
-from langchain_community.document_loaders import DirectoryLoader
 from langchain_community.document_loaders.csv_loader import CSVLoader
 from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
 from pinecone import Pinecone, ServerlessSpec
@@ -32,14 +31,13 @@ class DataPipeline:
 
 
 
-    def load_data(self, data_dir: str)-> List[Document]:
+    def load_data(self, data_path: str)-> List[Document]:
         try:
-            logging.info(f"Loading data from {data_dir}")
-            loader = DirectoryLoader(path=data_dir,
-                                     glob="*.csv",
-                                     loader_cls=CSVLoader,
-                                     loader_kwargs={'encoding': 'utf-8',
-                                                    'csv_args': {'delimiter': ',', 'quotechar': '"'}})
+            logging.info(f"Loading data from {data_path}")
+            loader = CSVLoader(file_path=data_path,
+                               encoding="utf-8",
+                                csv_args={"delimiter": ",",
+                                          "quotechar": '"'})
             docs = loader.load()
 
             logging.info(f"Sample data: {docs[:5]}")
