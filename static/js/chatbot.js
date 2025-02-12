@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const chatbotLogo = document.querySelector('.chatbot-logo');
     const welcomePopup = document.querySelector('.welcome-popup');
     const closePopupBtns = document.querySelectorAll('.close-popup');
-    
+    const messagesContainer = document.querySelector('.chat-messages');
+    const textarea = document.querySelector('.chat-input textarea');
+    const sendBtn = document.querySelector('.chat-input button');
+
     // Show welcome popup after 3 seconds
     setTimeout(() => {
         welcomePopup.classList.add('show');
@@ -25,47 +28,108 @@ document.addEventListener('DOMContentLoaded', function() {
     chatbotLogo.addEventListener('click', () => {
         chatWidget.classList.toggle('open');
         welcomePopup.classList.remove('show');
+        if (chatWidget.classList.contains('open')) {
+            textarea.focus();
+        }
     });
 
-    // Send message functionality
-    const input = document.querySelector('.chat-input input');
-    const sendBtn = document.querySelector('.chat-input button');
+    // Function to auto-resize textarea
+    function autoResize() {
+        textarea.style.height = 'auto';
+        textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px';
+    }
 
-    function sendMessage() {
-        const message = input.value.trim();
-        if (message) {
-            const messagesContainer = document.querySelector('.chat-messages');
-            const userMessage = document.createElement('div');
-            userMessage.className = 'message user-message';
-            userMessage.textContent = message;
-            messagesContainer.appendChild(userMessage);
-            input.value = '';
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    // Function to add a message to the chat
+    function addMessage(message, type) {
+        const messageElement = document.createElement('div');
+        messageElement.className = `message ${type}-message`;
+        
+        if (type === 'bot' && message.includes('Order Invoice')) {
+            const formattedMessage = message.replace(/\n/g, '<br>');
+            messageElement.innerHTML = `<pre>${formattedMessage}</pre>`;
+        } else {
+            messageElement.textContent = message;
+        }
+        
+        messagesContainer.appendChild(messageElement);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function showTypingIndicator() {
+        const indicator = document.querySelector('.typing-indicator');
+        indicator.classList.add('active');
+    }
+
+    function hideTypingIndicator() {
+        const indicator = document.querySelector('.typing-indicator');
+        indicator.classList.remove('active');
+    }
+
+    // Function to send message to backend and get response
+    async function sendMessage() {
+        const message = textarea.value.trim();
+        if (!message) return;
+
+        addMessage(message, 'user');
+        textarea.value = '';
+        autoResize();
+
+        showTypingIndicator();
+        try {
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ input: message })
+            });
+
+            if (!response.ok) throw new Error('Network response was not ok');
+
+            const data = await response.json();
+            hideTypingIndicator();
+            
+            let formattedResponse = data.response;
+            if (formattedResponse.includes('Order Invoice')) {
+                formattedResponse = formattedResponse
+                    .replace(/-----------------------------/g, '─'.repeat(35))
+                    .replace(/ {2,}/g, ' ')
+                    .trim();
+            }
+            
+            addMessage(formattedResponse, 'bot');
+
+        } catch (error) {
+            console.error('Error:', error);
+            hideTypingIndicator();
+            addMessage('Sorry, I am unable to process your request right now.', 'bot');
         }
     }
 
-    sendBtn.addEventListener('click', sendMessage);
-    input.addEventListener('keypress', (e) => {
+    // Event listeners
+    textarea.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
-            sendMessage();
+            if (e.shiftKey) {
+                // Let the new line happen
+                return;
+            } else {
+                e.preventDefault();
+                sendMessage();
+            }
         }
     });
 
-
-
+    textarea.addEventListener('input', autoResize);
+    sendBtn.addEventListener('click', sendMessage);
 
     // Add hover functionality for chatbot logo
     chatbotLogo.addEventListener('mouseenter', () => {
-        // Only show popup if it's not already visible
         if (!welcomePopup.classList.contains('show')) {
             welcomePopup.classList.add('show');
         }
     });
 
-    // Optional: Hide popup when mouse leaves the chatbot logo
     chatbotLogo.addEventListener('mouseleave', () => {
-        // Only hide if the popup wasn't shown by the initial 3-second timer
-        // Get the current time and check if 3 seconds have passed since page load
         const timeElapsed = Date.now() - performance.timing.navigationStart;
         if (timeElapsed > 3000) {
             welcomePopup.classList.remove('show');
