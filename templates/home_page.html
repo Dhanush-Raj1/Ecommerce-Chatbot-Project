@@ -537,17 +537,17 @@
             <button class="close-popup">×</button>
             <p class="welcome-message">Need help? I'm here to assist you! 👋</p>
         </div>
-    
+        
         <!-- Chatbot Logo -->
         <div class="chatbot-logo">
-            <img src="../static/images/chatbot-icon-1.png" alt='chatbot logo'>
+            <img src="../static/images/chatbot-icon-2-.png" alt='chatbot logo'>
         </div>
-    
+        
         <!-- Chatbot Widget -->
         <div class="chat-widget">
             <div class="chat-header">
                 <h3>
-                    <img src="../static/images/chatbot-icon.png" alt="Chatbot Logo">
+                    <img src="../static/images/chatbot-icon-1.png" alt="Chatbot Logo">
                     Customer Support
                 </h3>
                 <button class="close-popup">×</button>
@@ -556,12 +556,18 @@
                 <div class="message bot-message">
                     Hello! How can I help you today?
                 </div>
+                <div class="typing-indicator">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
             </div>
             <div class="chat-input">
-                <input type="text" placeholder="Type your message...">
+                <textarea placeholder="Type your message..."></textarea>
                 <button>Send</button>
             </div>
         </div>
+        
 
         <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
    
