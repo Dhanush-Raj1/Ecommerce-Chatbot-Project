@@ -2,12 +2,14 @@ selenium
 amazoncaptcha
 pandas 
 numpy
+langchain-core
 langchain-community
 huggingface-hub
 langchain-nvidia-ai-endpoints
 python-dotenv
 Pinecone
 langchain-pinecone
-langchain-groq 
+langchain-groq
+langgraph 
 Flask 
 -e .
