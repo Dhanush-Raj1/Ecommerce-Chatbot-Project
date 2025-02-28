@@ -1,6 +1,6 @@
 <h1 align="center">🤖 Ecommerce Chatbot</h1>
 
-![Static Badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=White&labelColor=Blue&color=red)
+![Static Badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=White&labelColor=white&color=red)
 
 
 # End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"
