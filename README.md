@@ -6,11 +6,11 @@
 ![Static Badge](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=LangChain&logoColor=blue&labelColor=white&color=purple)
 ![Static Badge](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=red&labelColor=white&color=black)
 
-![Static Badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=White&labelColor=red&color=red)
-![Static Badge](https://img.shields.io/badge/Agno-3776AB?style=for-the-badge&logo=&logoColor=White&labelColor=blue&color=blue)
+![Static Badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white&labelColor=blue&color=blue)
+![Static Badge](https://img.shields.io/badge/Agno-3776AB?style=for-the-badge&logo=&logoColor=White&labelColor=blue&color=red)
 ![Static Badge](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white&labelColor=yellow&color=yellow)
 ![Static Badge](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=LangChain&logoColor=white&labelColor=purple&color=purple)
-![Static Badge](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white&labelColor=black&color=black)
+![Static Badge](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white&labelColor=green&color=green)
 
 # End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"
 
