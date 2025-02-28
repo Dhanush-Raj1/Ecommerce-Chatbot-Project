@@ -4,7 +4,8 @@
 ![Static Badge](https://img.shields.io/badge/Agno-3776AB?style=for-the-badge&logo=&logoColor=black&labelColor=white&color=blue)
 ![Static Badge](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=black&labelColor=white&color=yellow)
 ![Static Badge](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=LangChain&logoColor=black&labelColor=white&color=purple)
-![Static Badge](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=black&labelColor=white&color=black)
+![Static Badge](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=black&labelColor=white&color=orange)
+![Static Badge](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=black&labelColor=white&color=brightgreen)
 
 
 # End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"
