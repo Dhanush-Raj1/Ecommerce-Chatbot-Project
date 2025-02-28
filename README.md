@@ -1,5 +1,4 @@
 <h1 align="center">🤖 Ecommerce Chatbot</h1>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=black&labelColor=white&color=red" />
   <img src="https://img.shields.io/badge/Agno-3776AB?style=for-the-badge&logo=&logoColor=black&labelColor=white&color=blue" />
