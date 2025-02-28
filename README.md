@@ -1,3 +1,6 @@
+<h1 align="center">🤖 Ecommerce Chatbot</h1>
+
+
 # End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"
 
 # 🛍️ E-Commerce Chatbot
