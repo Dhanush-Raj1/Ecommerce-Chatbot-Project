@@ -1,7 +1,5 @@
 <h1 align="center">🤖 Ecommerce Chatbot</h1>
 
-<h1 align="center"> End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company</h1>
---
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=black&labelColor=white&color=red" />
   <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=black&labelColor=white&color=yellow" />
@@ -14,9 +12,10 @@
 
 ---
 
+<h1 align="center"> End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company</h1>
 
 
-# 🛍️ E-Commerce Chatbot
+# 📌 Overview
 
 An GenAI-powered customer service chatbot for e-commerce, built using **LangChain, Pinecone, Groq, llama3.3 70b model**. The chatbot provides product recommendations, processes orders, tracks shipments, and remembers past conversations for a seamless user experience.
 
