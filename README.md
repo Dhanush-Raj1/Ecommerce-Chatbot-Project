@@ -1,4 +1,7 @@
 <h1 align="center">🤖 Ecommerce Chatbot</h1>
+
+### End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=black&labelColor=white&color=red" />
   <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=black&labelColor=white&color=yellow" />
@@ -11,7 +14,7 @@
 
 ---
 
-### End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"
+
 
 # 🛍️ E-Commerce Chatbot
 
