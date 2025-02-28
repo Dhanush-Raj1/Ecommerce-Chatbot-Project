@@ -12,7 +12,7 @@
 
 ---
 
-<h1 align="center"> End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company</h1>
+<h1 align="center"> End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"</h1>
 
 
 # 📌 Overview
