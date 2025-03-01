@@ -128,7 +128,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone [[https://github.com/yourusername/Product-Search-Agent-WebApp.git](https://github.com/Dhanush-Raj1/Product-Search-Agent-Project.git](https://github.com/Dhanush-Raj1/Ecommerce-Chatbot-Project.git)](https://github.com/Dhanush-Raj1/Ecommerce-Chatbot-Project.git)
+git clone https://github.com/Dhanush-Raj1/Ecommerce-Chatbot-Project.git
 cd Ecommerce-Chatbot-Project
 ```
 
