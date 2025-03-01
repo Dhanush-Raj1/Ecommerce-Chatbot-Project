@@ -100,12 +100,12 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 <br>
   
 # 📸 Screenshots  
-- Screenshot of the website:  (Click the icon on the right bottom of the screen to open the chatbot)   
-<img src="readme_images/screenshot_1.PNG" width="950" height="550">
+### Screenshot of the website:  *(Click the icon on the right bottom of the screen to open the chatbot)*  
+<img src="readme_images/screenshot_1.PNG" width="950" height="550">  
      
 <br>  
   
-- Screenshot of the chatbot:      
+### Screenshot of the chatbot:      
 <img src="readme_images/screenshot_2.PNG" width="350" height="450">    
 
 <br>
