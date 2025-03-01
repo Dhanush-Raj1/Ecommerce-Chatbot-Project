@@ -22,6 +22,7 @@
 
 An GenAI-powered customer service chatbot for e-commerce, built using **LangChain, Pinecone, Groq, llama3.3 70b model**. The chatbot provides product recommendations, processes orders, tracks shipments, and remembers past conversations for a seamless user experience.
 
+<br>
 
 ## 🚀 Features
 - **Product Recommendations**: Suggests products based on user queries and budget.
@@ -30,6 +31,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - **Conversational Memory**: Retains chat history using **LangGraph** for better interactions.
 - **Efficient Retrieval**: Uses **Pinecone** for fast, relevant document retrieval.
 
+<br>
 
 ## 🏗️ Tech Stack
 - **Python** (Flask for Web Interface)
@@ -39,6 +41,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - **HTML & CSS** (Frontend for chatbot UI)
 - **GROQ API** (GROQ for accessing Llama 3.3 70b model) 
 
+<br>
 
 ## :triangular_flag_on_post: Working with the chatbot  
 - Chat in natural language.  
@@ -46,6 +49,8 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - Make orders.  
 - Ask for invoice of your order.  
 - Ask for recommendation for example: Recommend me a shirt under the budget of rupees 1000 but above rupees 500.   
+
+<br>
   
 ## :bricks: Project Overview:    
 ## 1. Data Collection: 
@@ -94,7 +99,8 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - Developed a Flask application to deploy the chatbot for real time access.      
 - Build an ecommerce website through html, css and integrated the chatbot in it.     
 - Handled the chatbot receive and response part through javascript.      
-  
+
+<br>
   
 ## 📸 Screenshots  
 - Screenshot of the website:  (Click the icon on the right bottom of the screen to open the chatbot)   
@@ -103,11 +109,15 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - Screenshot of the chatbot:    
 <img src="readme_images/screenshot_2.PNG" width="400" height="450">    
 
+<br>
+
 ## 🎯 Future Enhancements
 - Support for more product categories
 - Integration with payment gateways
 - Multi-language support
 
+<br>
 
-
+🤝 Contributing  
+💡 Have an idea? Feel free to contribute or open an issue and pull requests!  
 
