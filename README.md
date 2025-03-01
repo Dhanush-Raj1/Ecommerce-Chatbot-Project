@@ -108,6 +108,60 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 <br>
 
+## 📂 Project Structure
+```
+/📂Product-Search-Agent-WebApp
+│── /📂static
+│   ├── styles.css  # CSS for UI styling
+│── /📂templates
+│   ├── index.html  # Main webpage template
+│── app.py  # Flask backend
+│── agent_builder.py  # AI agent logic
+│── exception.py  # Custom exception handling
+│── requirements.txt  # Python dependencies
+│── .env  # Environment variables
+```
+
+<br>
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/Product-Search-Agent-WebApp.git](https://github.com/Dhanush-Raj1/Product-Search-Agent-Project.git
+cd Ecommerce-Chatbot-Project
+```
+
+### 2️⃣ Create a Virtual Environment
+```sh
+conda create -p envi python==3.9 -y
+source venv/bin/activate   # On macOS/Linux
+conda activate envi     # On Windows
+```
+
+### 3️⃣ Install Dependencies
+```sh
+pip install -r requirements.txt
+```
+
+### 4️⃣ Set Up Environment Variables
+Create a `.env` file in the root directory and add:
+```sh
+NVIDIA_API_KEY=your_nvidia_api_key
+PINECONE_API_KEY=your_pinecone_api_key
+GROQ_API_KEY=your_groq_api_key
+```
+
+### 5️⃣ Run the Flask App
+```sh
+python app.py
+```
+
+The app will be available at: **http://127.0.0.1:5000/**
+
+<br>
+
+
 ## 🎯 Future Enhancements
 - Support for more product categories
 - Integration with payment gateways
