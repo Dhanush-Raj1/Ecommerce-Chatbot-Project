@@ -21,7 +21,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 <br>
 
-## 🚀 Features
+# 🚀 Features
 - **Product Recommendations**: Suggests products based on user queries and budget.
 - **Order Processing**: Handles multiple items, calculates totals, and generates order confirmations.
 - **Order Tracking**: Provides real-time order status updates.
@@ -30,7 +30,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 <br>
 
-## 🏗️ Tech Stack
+# 🏗️ Tech Stack
 - **Python** (Flask for Web Interface)
 - **Selenium** (For Webscraping amazon website)
 - **LangChain** (LLM integration & retrieval-augmented generation)
@@ -40,7 +40,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 <br>
 
-## :triangular_flag_on_post: Working with the chatbot  
+# :triangular_flag_on_post: Working with the chatbot  
 - Chat in natural language.  
 - Ask any kind of questions related to any products to the chatbot. Some products are listed in the website mention the product name or other details and ask further questions about the product.  
 - Make orders.  
@@ -49,7 +49,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 <br>
   
-## :bricks: Project Overview:    
+# :bricks: Project Overview:    
 ## 1. Data Collection: 
     
 - The first step in our project was collecting product data from Amazon. This data includes product details, pricing, and other metadata.       
@@ -99,7 +99,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 <br>
   
-## 📸 Screenshots  
+# 📸 Screenshots  
 - Screenshot of the website:  (Click the icon on the right bottom of the screen to open the chatbot)   
 <img src="readme_images/screenshot_1.PNG" width="950" height="550">     
 <br><br>  
@@ -108,7 +108,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 <br>
 
-## 📂 Project Structure
+# 📂 Project Structure
 ```
 /📂Product-Search-Agent-WebApp
 │── /📂static
@@ -124,7 +124,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 <br>
 
-## 🚀 Installation & Setup
+# 🚀 Installation & Setup
 
 ### 1️⃣ Clone the Repository
 ```sh
@@ -162,7 +162,7 @@ The app will be available at: **http://127.0.0.1:5000/**
 <br>
 
 
-## 🎯 Future Enhancements
+# 🎯 Future Enhancements
 - Support for more product categories
 - Integration with payment gateways
 - Multi-language support
