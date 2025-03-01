@@ -14,9 +14,50 @@
 
 <br>
 
-# 📌 Overview
+# 📌 Ecommerce Chatbot
 
 An GenAI-powered customer service chatbot for e-commerce, built using **LangChain, Pinecone, Groq, llama3.3 70b model**. The chatbot provides product recommendations, processes orders, tracks shipments, and remembers past conversations for a seamless user experience.
+
+<br>
+
+## 🎯 Project Overview
+### 1. Data Collection:
+- Using selenium the data collection process has been automated.  
+- Data has been collected from amazon website.
+- Data has been collected on different categories such as:
+    - Formal Shirts for men
+    - Sarees for women
+    - Watches for men
+- For each category the below details has been scraped:
+    - Brand name
+    - Product name
+    - Rating
+    - Rating counts
+    - Selling Price
+    - MRP (original price)
+    - Offer percentage
+
+### 2. Data Cleaning and Preprocessing:
+- Once the data has been collected, it has been cleaned and preprocessed. 
+- Luckily the data is not too messy, I had to handle missing values for ratings, ratings counts and a few other columns
+- Used mode to fill in the missing values 
+
+### 3. Vector Embedding:
+- I used nvidia embedding model "nv-embedqa-mistral-7b-v2" to generate vector embeddings.
+- Accessed the embedding model through Langchain framework.
+  
+### 4. Loading the embeddings to Pinecone vectorstore:
+- After the embeddings has been created, uploaded the embeddings into pinecone vector store. 
+- First created a pinecone index and then loaded the embeddings to the pinecone index.
+
+### 5. LLM model and prompt: 
+- I used the "llama-3.3-70b-versatile" model through Groq using the langchain framework.
+- I chose groq since it increases the computing speed and response speed of an LLM significantly.
+- Created prompt for the llm with specific instructions and guidelines it optimize the model's response.
+
+### 6. Setting up RAG (retrieval augumented generation)
+
+### 7. Creating document chain and retrieval chain 
 
 <br>
 
