@@ -21,6 +21,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 ## 🎯 Project Overview
 ### 1. Data Collection
+- The first step in our project was collecting **real world product data** from Amazon.
 - Implemented automated web scraping using Selenium to extract product information from Amazon.
 - Targeted different product categories including:
     - Formal Shirts for men
@@ -34,7 +35,6 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
     - Selling Price
     - MRP (original price)
     - Offer percentage
-
 
 ### 2. Data Cleaning and Preprocessing
 - Performed thorough data cleaning and preprocessing on the collected dataset
@@ -65,6 +65,7 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 ### 7. Flask Web Application
 - Developed a web interface using Flask framework
 - Created an e-commerce website with integrated chatbot functionality using HTML and CSS
+- Handled the chatbot receive and response part through javascript.    
 - The final result delivers a user experience that is similar in a interaction with a customer service representative of a clothing company
 
 <br>
@@ -85,76 +86,6 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - **Pinecone** (Vector database for retrieval)
 - **HTML & CSS** (Frontend for chatbot UI)
 - **GROQ API** (GROQ for accessing Llama 3.3 70b model) 
-
-<br>
-
-# :triangular_flag_on_post: Working with the chatbot  
-- Chat in natural language.  
-- Ask any kind of questions related to any products to the chatbot. Some products are listed in the website mention the product name or other details and ask further questions about the product.  
-- Make orders.  
-- Ask for invoice of your order.  
-- Ask for recommendation for example: Recommend me a shirt under the budget of rupees 1000 but above rupees 500.   
-
-<br>
-  
-# :bricks: Project Overview:    
-## 1. Data Collection: 
-    
-- The first step in our project was collecting product data from Amazon. This data includes product details, pricing, and other metadata.       
-- I used selenium to automate the webscraping process.    
-- collected real-world product data from Amazon using Selenium for web scraping. The dataset includes details for:    
-    - Men's Formal Shirts    
-    - Women's Sarees    
-    - Men's Watches    
-- For each product, the following attributes were extracted:  
-    - Brand Name  
-    - Product Name  
-    - Rating  
-    - Rating Count  
-    - Selling Price  
-    - MRP (Maximum Retail Price)  
-    - Offer/Discount  
-  
-## 2. Data Cleaning:
-    
-- The collected data has to been cleaned.    
-- I have to handle the missing values as we will use the data to create a vector store and missing values negatively impact the reponse of our chatbot.  
-- Used mode (most occured value) to fill in the missing values.  
-- Majority of missing values were in the Rating column and Rating count.  
-- Some missing values were found in the Price column and MRP.  
-    
-## 3. Pinecone Vector Store:
-    
-- I used the nvidia embedding model "nvidia/nv-embedqa-mistral-7b-v2", accessed the model directly through nvidia website.    
-- Once embeddings has been setup, I create the pinecone vector index.     
-- Upload documents to the vector store.        
-  
-## 4. Initiate LLM:
-  
-- Used the **Groq** to access the "llama3.3 70b" model.    
-- Used groq because it enhances the speed of the response of an llm which is suitable for our chatbot.     
-         
-## 5. Build Retriever:
-  
-- Load the pinecone vector store and initiate it as a retriever.    
--  Our chatbot has to remember of the conversation, therefore we have to memory / history for the chatbot. Used the inbuild "chat_history" and "session_id" to build memory for the chatbot.  
-        
-## 6. Deployment:
-  
-- Developed a Flask application to deploy the chatbot for real time access.      
-- Build an ecommerce website through html, css and integrated the chatbot in it.     
-- Handled the chatbot receive and response part through javascript.      
-
-<br>
-  
-# 📸 Screenshots  
-### Screenshot of the website:  *(Click the icon on the right bottom of the screen to open the chatbot)*  
-<img src="readme_images/screenshot_1.PNG" width="950" height="550">  
-     
-<br>  
-  
-### Screenshot of the chatbot:      
-<img src="readme_images/screenshot_2.PNG" width="350" height="450">    
 
 <br>
 
@@ -238,6 +169,25 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 <br>
 
+# :triangular_flag_on_post: Working with the chatbot  
+- Chat in natural language.  
+- Ask any kind of questions related to any products to the chatbot. Some products are listed in the website mention the product name or other details and ask further questions about the product.  
+- Make orders.  
+- Ask for invoice of your order.  
+- Ask for recommendation for example: Recommend me a shirt under the budget of rupees 1000 but above rupees 500.   
+
+<br>
+
+# 📸 Screenshots  
+### Screenshot of the website:  *(Click the icon on the right bottom of the screen to open the chatbot)*  
+<img src="readme_images/screenshot_1.PNG" width="950" height="550">  
+     
+<br>  
+  
+### Screenshot of the chatbot:      
+<img src="readme_images/screenshot_2.PNG" width="350" height="450">    
+
+<br>
 
 # 🎯 Future Enhancements
 - Support for more product categories
