@@ -1,5 +1,5 @@
 <h1 align="center">🤖 Ecommerce Chatbot</h1>
-
+<h3 align="center"> End to End Data Sciene Project: "Customer Service Chatbot for an Ecommerce Clothing Company"</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=black&labelColor=white&color=red" />
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=LangChain&logoColor=black&labelColor=white&color=blue" />
@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=black&labelColor=white&color=fuchsia" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black&labelColor=white&color=cyan" />
 </p>
-<h1 align="center"> End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"</h1>
 
 <br>
 
