@@ -15,70 +15,58 @@
 <br>
 
 # 📌 Ecommerce Chatbot
-
 An GenAI-powered customer service chatbot for e-commerce, built using **LangChain, Pinecone, Groq, llama3.3 70b model**. The chatbot provides product recommendations, processes orders, tracks shipments, and remembers past conversations for a seamless user experience.
 
 <br>
 
 ## 🎯 Project Overview
-## 1. Data Collection
-
-Implemented automated web scraping using Selenium to extract product information from Amazon
-Targeted diverse product categories including:
-
-Formal Shirts for men
-Sarees for women
-Watches for men
-
-
-Extracted comprehensive product attributes:
-
-Brand name
-Product name
-Rating
-Rating counts
-Selling Price
-MRP (original price)
-Offer percentage
+### 1. Data Collection
+- Implemented automated web scraping using Selenium to extract product information from Amazon.
+- Targeted different product categories including:
+    - Formal Shirts for men
+    - Sarees for women
+    - Watches for men
+- For each category the below details has been collected:
+    - Brand name
+    - Product name
+    - Rating
+    - Rating counts
+    - Selling Price
+    - MRP (original price)
+    - Offer percentage
 
 
+### 2. Data Cleaning and Preprocessing
+- Performed thorough data cleaning and preprocessing on the collected dataset
+- Handled missing values in ratings, rating counts, and other relevant columns
+- Applied mode imputation to replace missing values as most of the columns are categorical
 
-2. Data Cleaning and Preprocessing
+### 3. Vector Embedding
+- Leveraged NVIDIA's embedding model "nv-embedqa-mistral-7b-v2" for vector embeddings
+- Selected this model based on its top performance on the MTEB leaderboard
+- Implemented embedding generation through the LangChain framework
 
-Performed thorough data cleaning and preprocessing on the collected dataset
-Handled missing values in ratings, rating counts, and other relevant columns
-Applied mode imputation to ensure data integrity and completeness
+### 4. Loading the Embeddings to Pinecone Vector Store
+- Transferred generated embeddings to Pinecone, Pinecone is a purpose-built vector database for AI applications
+- First created a Pinecone index using Python and 
+- Uploaded the embeddings to the index to enable semantic search capabilities
 
-3. Vector Embedding
+### 5. LLM Model and Prompt Engineering
+- Integrated "llama-3.3-70b-versatile" model via Groq through the LangChain framework
+- Selected Groq for its significant enhancements in computational efficiency and response speed
+- Developed optimized prompts with specific instructions and guidelines to maximize model performance and response
 
-Leveraged NVIDIA's state-of-the-art embedding model "nv-embedqa-mistral-7b-v2" for vector representation
-Selected this model based on its top performance on the MTEB leaderboard
-Implemented embedding generation through the LangChain framework for seamless integration
+### 6. Setting up RAG (Retrieval Augmented Generation)
+- Setup the Pinecone vector store as an retriever
+- Created document chain after LLM and prompt configuration
+- Created retrieval chain utilizing both the retriever and document chain
+- Finally our fully functional RAG-based chatbot system is to be used
 
-4. Loading the Embeddings to Pinecone Vector Store
+### 7. Flask Web Application
+- Developed a web interface using Flask framework
+- Created an e-commerce website with integrated chatbot functionality using HTML and CSS
+- The final result delivers a user experience that is similar in a interaction with a customer service representative of a clothing company
 
-Transferred generated embeddings to Pinecone, a purpose-built vector database for AI applications
-Created a dedicated Pinecone index using Python
-Populated the index with product embeddings to enable semantic search capabilities
-
-5. LLM Model and Prompt Engineering
-
-Integrated "llama-3.3-70b-versatile" model via Groq through the LangChain framework
-Selected Groq for its significant enhancements in computational efficiency and response speed
-Developed optimized prompts with specific instructions and guidelines to maximize model performance
-
-6. Setting up RAG (Retrieval Augmented Generation)
-
-Configured the Pinecone vector store as an efficient retriever
-Established a robust document chain after LLM and prompt configuration
-Implemented a comprehensive retrieval chain utilizing both the retriever and document chain
-Successfully deployed a fully functional RAG-based chatbot system
-
-7. Flask Web Application
-
-Developed a web interface using Flask framework
-Created an intuitive e-commerce website with integrated chatbot functionality using HTML and CSS
-Delivered a seamless user experience that simulates interaction with a customer service representative
 <br>
 
 # 🚀 Features
