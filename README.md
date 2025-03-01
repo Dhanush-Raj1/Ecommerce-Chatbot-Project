@@ -169,6 +169,6 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 <br>
 
-🤝 Contributing  
+# 🤝 Contributing  
 💡 Have an idea? Feel free to contribute or open an issue and pull requests!  
 
