@@ -165,6 +165,9 @@ The app will be available at: **http://127.0.0.1:5000/**
 # 🎯 Future Enhancements
 - Support for more product categories
 - Integration with payment gateways
+- Connectivity between customers and customer service employees
+- Advanced memory support with backend database connection
+- Improved accuracy on product recommendations
 - Multi-language support
 
 <br>
@@ -172,5 +175,5 @@ The app will be available at: **http://127.0.0.1:5000/**
 # 🤝 Contributing  
 💡 Have an idea? Feel free to contribute or open an issue and pull requests!  
 
-# 📄 License    
-This project is licensed under the MIT License – see the LICENSE file for details.   
+# 📄 License
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details. 
