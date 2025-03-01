@@ -112,16 +112,43 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 
 # 📂 Project Structure
 ```
-/📂Product-Search-Agent-WebApp
-│── /📂static
-│   ├── styles.css      # CSS for UI styling
-│── /📂templates
-│   ├── index.html      # Main webpage template
-│── app.py              # Flask backend
-│── agent_builder.py    # AI agent logic
-│── exception.py        # Custom exception handling
-│── requirements.txt    # Python dependencies
-│── .env                # Environment variables
+/📂Ecommerce-Chatbot-Project
+│── /📂Data                             # Data collected from amazon
+│   ├── data_cleaned.csv                      
+|   ├── data_shirts.csv                  
+│   ├── data_sarees.csv                      
+│   ├── data_watches.csv
+│── /📂rough                          # Research and rough work                
+│── /📂readme_images                  # Screenshots of the webapp
+│   │── screenshot_1.png
+│   │── screenshot_2.png
+│── /📂src                            # Source files (core files of the project)
+|   ├── main.py                       # Running the chabot locally
+|   │── /📂components                 # Main components files
+|   |  ├── scraper.py                
+|   |  ├── data_colletion.py          
+|   |  ├── data_cleaning.py          
+|   |  ├── vectorstore_builder.py     
+|   |  ├── chatbot_builder.py         
+|   │── /📂utils                      # Utilities files 
+|   |  ├── exception.py                
+|   |  ├── logger.py                  
+|   |  ├── chatbot_utils.py            
+│── /📂static                         # Static folder
+|   │── /📂css                        # Css files 
+|   |   │── hp_style.css              # Home page styles
+|   │── /📂images                     # Website Images
+|   │── /📂js                         # javascripts  
+│── /📂templates                      # Templates (html files)
+|   │── /home_page.html
+│── /📂notebook                       # Research ipynb notebook 
+│── .gitignore
+│── LICENCE
+│── README.md
+│── app.py                            # Flask backend
+│── chromedriver.exe                  # Chrome driver application 
+│── requirements.txt                  # Python dependencies
+│── setup.py                          # Setup
 ```
 
 <br>
