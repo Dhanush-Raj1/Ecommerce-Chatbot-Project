@@ -114,14 +114,14 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 ```
 /📂Product-Search-Agent-WebApp
 │── /📂static
-│   ├── styles.css  # CSS for UI styling
+│   ├── styles.css      # CSS for UI styling
 │── /📂templates
-│   ├── index.html  # Main webpage template
-│── app.py  # Flask backend
-│── agent_builder.py  # AI agent logic
-│── exception.py  # Custom exception handling
-│── requirements.txt  # Python dependencies
-│── .env  # Environment variables
+│   ├── index.html      # Main webpage template
+│── app.py              # Flask backend
+│── agent_builder.py    # AI agent logic
+│── exception.py        # Custom exception handling
+│── requirements.txt    # Python dependencies
+│── .env                # Environment variables
 ```
 
 <br>
