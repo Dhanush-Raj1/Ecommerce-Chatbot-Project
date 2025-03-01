@@ -11,12 +11,9 @@
   <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=black&labelColor=white&color=fuchsia" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black&labelColor=white&color=cyan" />
 </p>
-
-
----
-
 <h1 align="center"> End to End Ecommerce Chatbot Project: "Customer Service Chatbot for an Ecommerce Clothing Company"</h1>
 
+<br>
 
 # 📌 Overview
 
