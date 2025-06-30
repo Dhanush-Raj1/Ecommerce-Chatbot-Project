@@ -173,3 +173,5 @@ cython_debug/
 
 
 .vscode/
+rough/
+logs/
