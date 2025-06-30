@@ -95,12 +95,13 @@ A GenAI-powered customer service chatbot designed for an e-commerce clothing com
 <br>
 
 # 🏗️ Tech Stack
-- **Python** (Flask for Web Interface)
+- **Python**  
+- **Flask** (Flask for Web Interface)
+- **Apache Airflow** (MLOps pipeline orchestration)
 - **Selenium** (For Webscraping amazon website)
 - **LangChain** (LLM integration & retrieval-augmented generation)
 - **Pinecone** (Vector database for retrieval)
 - **GROQ API** (GROQ for accessing Llama 3.3 70b model)
-- **Apache Airflow** (MLOps pipeline orchestration)
 - **HTML & CSS** (Frontend for chatbot UI)
 
 
