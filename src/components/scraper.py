@@ -207,10 +207,8 @@ def scrape_products(keyword:str, num_products:int) -> pd.DataFrame:
             if driver is not None:
                 try:
                     driver.quit()
-                    print("Chrome driver closed successfully")
                     logging.info("Chrome driver closed successfully")
                 except Exception as cleanup_error:
-                    print(f"Error closing driver: {cleanup_error}")
                     logging.error(f"Error closing driver: {cleanup_error}")
             
             # Clean up temporary directory

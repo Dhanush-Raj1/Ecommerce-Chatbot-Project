@@ -11,18 +11,18 @@ from dataclasses import dataclass
 products_config = [
     {
         'keyword': 'Mens formal shirts',
-        'num_products': 100,
-        'file_path': 'data_shirts_new.csv',
+        'num_products': 2000,
+        'file_path': 'data_shirts.csv',
     },
     {
         'keyword': 'Sarees',
-        'num_products': 100,
-        'file_path': 'data_sarees_new.csv',
+        'num_products': 2000,
+        'file_path': 'data_sarees.csv',
     },
     {
         'keyword': 'Watches for men',
-        'num_products': 100,
-        'file_path': 'data_watches_new.csv',
+        'num_products': 2000,
+        'file_path': 'data_watches.csv',
     },
 ]
 

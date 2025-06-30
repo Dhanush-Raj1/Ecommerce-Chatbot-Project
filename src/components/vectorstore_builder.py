@@ -44,7 +44,7 @@ class VectorStoreBuilder:
 
 
 
-    def load_data(self, data_path: str)-> List[Document]:
+    def load_data(self, data_path: str) -> List[Document]:
         try:
             logging.info(f"Loading data from {data_path}")
             loader = CSVLoader(file_path=data_path,
@@ -63,7 +63,7 @@ class VectorStoreBuilder:
     
 
 
-    def create_embeddings(self):
+    def create_embeddings(self) -> NVIDIAEmbeddings:
         try:
             logging.info("Initializing NVIDIA Embeddings.")
             embeddings = NVIDIAEmbeddings(
@@ -80,7 +80,9 @@ class VectorStoreBuilder:
     
 
 
-    def create_vector_store(self, documents: List[Document], embeddings: NVIDIAEmbeddings, index_name: str = 'rough-project')->PineconeVectorStore:
+    def create_vector_store(self, documents: List[Document], 
+                            embeddings: NVIDIAEmbeddings, 
+                            index_name: str = 'ecommerce-chatbot-project') -> PineconeVectorStore:
         try:
             logging.info(f"Connecting to Pinecone and creating index: {index_name}")
             pc = Pinecone(api_key=self.pinecone_api_key)
@@ -113,7 +115,7 @@ class VectorStoreBuilder:
         
 
 
-    def run_pipeline(self)-> PineconeVectorStore:
+    def run_pipeline(self) -> PineconeVectorStore:
         try:
             logging.info("Starting vectorstore pipeline")
             docs = self.load_data(self.vectorstore_builder_config.path)
