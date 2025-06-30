@@ -1,8 +1,8 @@
 import sys
 import os
-
 import pandas as pd
 from pandas import DataFrame  
+from dataclasses import dataclass
 import numpy as np 
 import glob
 
@@ -10,13 +10,24 @@ from src.utils.logger import logging
 from src.utils.exception import Custom_exception
 
 
+@dataclass
+class DataCleaningConfig:
+    is_airflow = os.getenv("IS_AIRFLOW", "false").lower() == "true"
+
+    if is_airflow:
+        input_path = "/opt/airflow/data/"
+        output_path = "/opt/airflow/artifacts/data_cleaned.csv" 
+    else:
+        input_path = "data"
+        output_path = "artifacts/data_cleaned.csv" 
+
 class DataCleaner:
     """
     Remove nan values from the data 
     """
 
     def __init__(self):
-        pass
+        self.data_cleaner_config = DataCleaningConfig()
 
 
     def load_data(self, file_path):
@@ -72,7 +83,7 @@ class DataCleaner:
     
     
 
-    def handling_na(self, columns, replacement_value, df: DataFrame):
+    def handling_na(self, columns, replacement_value, df: DataFrame, path):
         try:
             logging.info("Replacing 'na' values with mode")
             
@@ -86,20 +97,25 @@ class DataCleaner:
             logging.info("Sucessfully replaced 'na' values")
             logging.info("Saving the cleaned data")
 
-            df.to_csv(r"F:\Data Science\Projects\Ecommerce-Chatbot-Project\Data\data_cleaned.csv")
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            df.to_csv(path)
             return df
+        
         except Exception as e:
             logging.info(f"Error in handling NA values: {str(e)}")
             raise Custom_exception(e, sys)
         
     
-    def clean_data(self, file_path):
+    def clean_data(self):
         try:
             logging.info("Starting data cleaning process")
-            df = self.load_data(file_path)
+            df = self.load_data(self.data_cleaner_config.input_path)
             self.check_for_na(df)
             cols, replace_value = self.find_mode(df)
-            df_cleaned = self.handling_na(cols, replace_value, df)
+            df_cleaned = self.handling_na(columns=cols, 
+                                          replacement_value=replace_value, 
+                                          df=df, 
+                                          path=self.data_cleaner_config.output_path)
 
             logging.info("Data cleaning process has been completed")
             return df_cleaned
@@ -107,3 +123,4 @@ class DataCleaner:
         except Exception as e:
             logging.error(f"Error cleaning data: {str(e)}")
             raise Custom_exception(e, sys)
+        

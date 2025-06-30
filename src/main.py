@@ -1,7 +1,8 @@
 import sys 
 
+from src.components.data_collection import DataCollection
 from src.components.data_cleaning import DataCleaner
-from src.components.vectorstore_builder import DataPipeline
+from src.components.vectorstore_builder import VectorStoreBuilder
 from src.components.chatbot_builder import ChatbotBuilder
 
 from src.utils.logger import logging
@@ -12,11 +13,14 @@ load_dotenv()
 
 def main():
     try:    
-        data_cleaner = DataCleaner()
-        data_cleaner.clean_data(r"F:\Data Science\Projects\Ecommerce-Chatbot-Project\Data")
+        # data_collection = DataCollection()
+        # data_collection.initiate_data_collection()
 
-        data_pipeline = DataPipeline()
-        vector_store = data_pipeline.run_pipeline(r"F:\Data Science\Projects\Ecommerce-Chatbot-Project\Data\data_cleaned.csv")
+        data_cleaner = DataCleaner()
+        data_cleaner.clean_data()
+
+        vectorstore_builder = VectorStoreBuilder()
+        vector_store = vectorstore_builder.run_pipeline()
 
         chatbot_builder = ChatbotBuilder()
         chatbot = chatbot_builder.build_chatbot(vector_store)

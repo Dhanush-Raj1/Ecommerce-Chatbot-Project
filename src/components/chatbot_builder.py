@@ -3,13 +3,13 @@ import sys
 from typing import Any
 
 from langchain_groq import ChatGroq
+from langchain_core.caches import BaseCache
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
 from langchain_pinecone import PineconeVectorStore
-
 
 from src.utils.logger import logging
 from src.utils.exception import Custom_exception
@@ -28,10 +28,14 @@ class ChatbotBuilder:
     def create_llm(self):
         try:
             logging.info("Initializing Llama2 model with Groq")
+
+            #ChatGroq.model_rebuild()
+
             llm = ChatGroq(temperature=0.6,
                            model_name="llama-3.3-70b-versatile",
                            groq_api_key=self.api_key,
-                           max_tokens=4096)
+                           max_tokens=4096,)
+                           #cache=True)
             
             logging.info("LLM initialized successfully")
             return llm
@@ -89,10 +93,12 @@ class ChatbotBuilder:
     def create_retriever(self, vector_store: PineconeVectorStore):
         try:
             logging.info("Initializing vector_store as retriever")
-            retriever = vector_store.as_retriever(search_type="similarity_score_threshold",
-                                                  search_kwargs={"score_threshold": 0.7})
+            retriever = vector_store.as_retriever(
+                search_type="similarity_score_threshold",
+                search_kwargs={"score_threshold": 0.7}
+            )
             
-            logging.info("Retriever has be initializing")
+            logging.info("Retriever has been initialized")
             return retriever
         
         except Exception as e:

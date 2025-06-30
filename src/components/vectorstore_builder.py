@@ -1,8 +1,9 @@
 import os 
 import sys 
-
-from typing import List
 import time
+from typing import List
+from dataclasses import dataclass
+
 from langchain_community.document_loaders.csv_loader import CSVLoader
 from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
 from pinecone import Pinecone, ServerlessSpec
@@ -16,7 +17,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-class DataPipeline:
+@dataclass
+class VectorStoreBuilderConfig:
+    is_airflow = os.getenv("IS_AIRFLOW", "false").lower() == "true"
+
+    if is_airflow:
+        path = "/opt/airflow/artifacts/data_cleaned.csv"
+
+    else:
+        path = "artifacts/data_cleaned.csv"
+
+class VectorStoreBuilder:
     """
     Load data 
     Create embeddings 
@@ -24,6 +35,8 @@ class DataPipeline:
     """
 
     def __init__(self):
+        self.vectorstore_builder_config = VectorStoreBuilderConfig()
+        
         self.nvidia_api_key = os.getenv("NVIDIA_API_KEY")
         self.pinecone_api_key = os.getenv("PINECONE_API_KEY")
         if not self.nvidia_api_key or not self.pinecone_api_key:
@@ -67,7 +80,7 @@ class DataPipeline:
     
 
 
-    def create_vector_store(self, documents: List[Document], embeddings: NVIDIAEmbeddings, index_name: str = 'ecommerce-chatbot-project')->PineconeVectorStore:
+    def create_vector_store(self, documents: List[Document], embeddings: NVIDIAEmbeddings, index_name: str = 'rough-project')->PineconeVectorStore:
         try:
             logging.info(f"Connecting to Pinecone and creating index: {index_name}")
             pc = Pinecone(api_key=self.pinecone_api_key)
@@ -100,14 +113,14 @@ class DataPipeline:
         
 
 
-    def run_pipeline(self, data_dir: str)-> PineconeVectorStore:
+    def run_pipeline(self)-> PineconeVectorStore:
         try:
-            logging.info("Starting data pipeline")
-            docs = self.load_data(data_dir)
+            logging.info("Starting vectorstore pipeline")
+            docs = self.load_data(self.vectorstore_builder_config.path)
             embeddings = self.create_embeddings()
             vector_store = self.create_vector_store(docs, embeddings)
 
-            logging.info("Data pipeline completed successfully")
+            logging.info("Vectorstore pipeline completed successfully")
             return vector_store
         
         except Exception as e:
