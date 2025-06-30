@@ -46,10 +46,10 @@ def build_chatbot():
     pipeline = VectorStoreBuilder()                     # loading the created vectorstore as we don't want to pass the result from one task to another 
     embeddings = pipeline.create_embeddings()
     vector_store = PineconeVectorStore.from_existing_index(
-        index_name="rough-project", 
+        index_name="ecommerce-chatbot-project", 
         embedding=embeddings
     )
-  
+   
     ChatbotBuilder().build_chatbot(vector_store)
 
 
