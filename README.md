@@ -70,9 +70,20 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - Handled the chatbot receive and response part through javascript.    
 - The final result delivers a user experience that is similar in a interaction with a customer service representative of a clothing company
 
+### 8. MLOps Integration with Apache Airflow
+- Integrated Apache Airflow to orchestrate the complete data pipeline.
+- Each pipeline stage is defined as a task:
+    - Data Collection DAG: Scrapes product data from Amazon using Selenium.
+    - Data Cleaning DAG: Cleans and preprocesses raw product data.
+    - Vector Store Builder DAG: Embeds product data and stores it in Pinecone.
+    - Chatbot Builder DAG: Builds and updates the chatbot using LLaMA and LangChain.
+- The pipeline runs daily at a scheduled time automatically as a result the chatbot gets trained with new product data. 
+- Enables better automation, monitoring, retry handling.
+
 <br>
 
 # 🚀 Features
+- **MLOps Orchestration**: Automates and monitors the entire pipeline with **Apache Airflow**.
 - **Product Recommendations**: Suggests products based on user queries and budget.
 - **Order Processing**: Handles multiple items, calculates totals, and generates order confirmations.
 - **Order Tracking**: Provides real-time order status updates.
@@ -86,20 +97,24 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 - **Selenium** (For Webscraping amazon website)
 - **LangChain** (LLM integration & retrieval-augmented generation)
 - **Pinecone** (Vector database for retrieval)
+- **GROQ API** (GROQ for accessing Llama 3.3 70b model)
+- **Apache Airflow** (MLOps pipeline orchestration)
 - **HTML & CSS** (Frontend for chatbot UI)
-- **GROQ API** (GROQ for accessing Llama 3.3 70b model) 
+
 
 <br>
 
 # 📂 Project Structure
 ```
 /📂Ecommerce-Chatbot-Project
-│── /📂Data                             # Data collected from amazon
-│   ├── data_cleaned.csv                      
+│── /📂dags                             # dag pipeline
+│   ├── pipeline.py
+│── /📂artifacts                             # artifact files
+│   ├── data_cleaned.csv    
+│── /📂data                             # Data collected from amazon                   
 |   ├── data_shirts.csv                  
 │   ├── data_sarees.csv                      
-│   ├── data_watches.csv
-│── /📂rough                          # Research and rough work                
+│   ├── data_watches.csv             
 │── /📂readme_images                  # Screenshots of the webapp
 │   │── screenshot_1.png
 │   │── screenshot_2.png
@@ -122,12 +137,13 @@ An GenAI-powered customer service chatbot for e-commerce, built using **LangChai
 |   │── /📂js                         # javascripts  
 │── /📂templates                      # Templates (html files)
 |   │── /home_page.html
-│── /📂notebook                       # Research ipynb notebook 
 │── .gitignore
 │── LICENCE
 │── README.md
 │── app.py                            # Flask backend
-│── chromedriver.exe                  # Chrome driver application 
+│── chromedriver.exe                  # Chrome driver application
+│── docker-compose.yml                # airflow docker container configuration
+│── dockerfile                  # airflow image 
 │── requirements.txt                  # Python dependencies
 │── setup.py                          # Setup
 ```
@@ -168,6 +184,13 @@ python app.py
 ```
 
 The app will be available at: **http://127.0.0.1:5000/**
+
+### 6️⃣ Run airflow pipeline
+```sh
+docker-compose up --build
+```
+
+Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manually or set a schedule for automation.
 
 <br>
 
