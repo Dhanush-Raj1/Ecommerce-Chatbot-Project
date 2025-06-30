@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=LangChain&logoColor=black&labelColor=white&color=1C3C3C" />
   <img src="https://img.shields.io/badge/Apache%20Airflow-blue?style=for-the-badge&logo=apache-airflow&logoColor=black&labelColor=white&color=grey" />
   <img src="https://img.shields.io/badge/Groq-234452?style=for-the-badge&logoColor=black&labelColor=white&color=green" />
-  <img src="https://img.shields.io/badge/Pinecone_DataBase-234452?style=for-the-badge&logoColor=black&labelColor=green&color=#046C4E" />
+  <img src="https://img.shields.io/badge/Pinecone_DataBase-234452?style=for-the-badge&logoColor=black&labelColor=green&color=cyan" />
   <img src="https://img.shields.io/badge/RAG-234452?style=for-the-badge&logoColor=black&labelColor=white&color=yellow" />
   <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=black&labelColor=white&color=darkblue" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=black&labelColor=white&color=teal" />
