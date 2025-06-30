@@ -229,5 +229,7 @@ Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manuall
 # 🤝 Contributing  
 💡 Have an idea? Feel free to contribute or open an issue and pull requests!  
 
+<br>
+
 # 📄 License
 This project is licensed under the **MIT License** – [LICENSE](LICENSE)  
