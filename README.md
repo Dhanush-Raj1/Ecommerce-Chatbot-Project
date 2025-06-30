@@ -1,6 +1,7 @@
 <h1 align="center">🤖 Ecommerce Chatbot</h1>
 <h3 align="center"> End to End MLOps Data Science Project: "Customer Service Chatbot for an Ecommerce Clothing Company"</h3>
-<h4 align="center">LLM-powered Ecommerce Chatbot with MLOps and Apache Airflow Orchestration"</h4>
+<h4 align="center">LLM-powered Ecommerce Chatbot with MLOps and Apache Airflow Orchestration</h4>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=black&labelColor=white&color=FFD43B" />
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=LangChain&logoColor=black&labelColor=white&color=1C3C3C" />
