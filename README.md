@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=black&labelColor=white&color=FFD43B" />
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=LangChain&logoColor=black&labelColor=white&color=1C3C3C" />
-  <img src="https://img.shields.io/badge/Apache%20Airflow-blue?style=for-the-badge&logo=apache-airflow&logoColor=black&labelColor=white&color=dc7633" />
+  <img src="https://img.shields.io/badge/Apache%20Airflow-blue?style=for-the-badge&logo=apache-airflow&logoColor=black&labelColor=white&color=#148f77" />
   <img src="https://img.shields.io/badge/Groq-234452?style=for-the-badge&logoColor=black&labelColor=white&color=green" />
   <img src="https://img.shields.io/badge/Pinecone_DataBase-234452?style=for-the-badge&logoColor=black&labelColor=green&color=cyan" />
   <img src="https://img.shields.io/badge/RAG-234452?style=for-the-badge&logoColor=black&labelColor=white&color=yellow" />
