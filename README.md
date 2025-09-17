@@ -111,44 +111,33 @@ A GenAI-powered customer service chatbot designed for an e-commerce clothing com
 ```
 /📂Ecommerce-Chatbot-Project
 │── /📂dags                             # dag pipeline
-│   ├── pipeline.py
-│── /📂artifacts                             # artifact files
-│   ├── data_cleaned.csv    
-│── /📂data                             # Data collected from amazon                   
-|   ├── data_shirts.csv                  
-│   ├── data_sarees.csv                      
-│   ├── data_watches.csv             
+│
+│── /📂artifacts                            
+│  
+│── /📂data                             # Data collected from amazon
+│                     
 │── /📂readme_images                  # Screenshots of the webapp
-│   │── screenshot_1.png
-│   │── screenshot_2.png
-│── /📂src                            # Source files (core files of the project)
+│
+│── /📂src                            # Source files 
 |   ├── main.py                       # Running the chabot locally
-|   │── /📂components                 # Main components files
-|   |  ├── scraper.py                
-|   |  ├── data_colletion.py          
-|   |  ├── data_cleaning.py          
-|   |  ├── vectorstore_builder.py     
-|   |  ├── chatbot_builder.py         
+|   │── /📂components                 # Main components files    
 |   │── /📂utils                      # Utilities files 
-|   |  ├── exception.py                
-|   |  ├── logger.py                  
-|   |  ├── chatbot_utils.py            
-│── /📂static                         # Static folder
+│         
+│── /📂static                        
 |   │── /📂css                        # Css files 
-|   |   │── hp_style.css              # Home page styles
 |   │── /📂images                     # Website Images
 |   │── /📂js                         # javascripts  
-│── /📂templates                      # Templates (html files)
-|   │── /home_page.html
+│── /📂templates                      # html files
+│
 │── .gitignore
 │── LICENCE
 │── README.md
-│── app.py                            # Flask backend
-│── chromedriver.exe                  # Chrome driver application
+│── app.py                            
+│── chromedriver.exe                  
 │── docker-compose.yml                # airflow docker container configuration
-│── dockerfile                  # airflow image 
-│── requirements.txt                  # Python dependencies
-│── setup.py                          # Setup
+│── dockerfile                        # airflow image 
+│── requirements.txt                 
+│── setup.py                         
 ```
 
 <br>
