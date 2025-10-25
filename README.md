@@ -1,6 +1,4 @@
 <h1 align="center">🤖 Ecommerce Chatbot</h1>
-<h3 align="center"> End to End MLOps Data Science Project: "Customer Service Chatbot for an Ecommerce Clothing Company"</h3>
-<h3 align="center">LLM-powered Ecommerce Chatbot with MLOps (Apache Airflow Orchestration)</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=black&labelColor=white&color=FFD43B" />
@@ -15,6 +13,11 @@
   <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=black&labelColor=white&color=fuchsia" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black&labelColor=white&color=blue" />
 </p>
+
+<h3 align="center"> End to End MLOps AI Agent Project: "Customer Service Chatbot for an Ecommerce Clothing Company"</h3>
+<h3 align="center">LLM-powered Ecommerce Chatbot with Apache Airflow Orchestration</h3>
+
+
 
 <br>
 
@@ -111,44 +114,33 @@ A GenAI-powered customer service chatbot designed for an e-commerce clothing com
 ```
 /📂Ecommerce-Chatbot-Project
 │── /📂dags                             # dag pipeline
-│   ├── pipeline.py
-│── /📂artifacts                             # artifact files
-│   ├── data_cleaned.csv    
-│── /📂data                             # Data collected from amazon                   
-|   ├── data_shirts.csv                  
-│   ├── data_sarees.csv                      
-│   ├── data_watches.csv             
+│
+│── /📂artifacts                            
+│  
+│── /📂data                             # Data collected from amazon
+│                     
 │── /📂readme_images                  # Screenshots of the webapp
-│   │── screenshot_1.png
-│   │── screenshot_2.png
-│── /📂src                            # Source files (core files of the project)
+│
+│── /📂src                            # Source files 
 |   ├── main.py                       # Running the chabot locally
-|   │── /📂components                 # Main components files
-|   |  ├── scraper.py                
-|   |  ├── data_colletion.py          
-|   |  ├── data_cleaning.py          
-|   |  ├── vectorstore_builder.py     
-|   |  ├── chatbot_builder.py         
+|   │── /📂components                 # Main components files    
 |   │── /📂utils                      # Utilities files 
-|   |  ├── exception.py                
-|   |  ├── logger.py                  
-|   |  ├── chatbot_utils.py            
-│── /📂static                         # Static folder
+│         
+│── /📂static                        
 |   │── /📂css                        # Css files 
-|   |   │── hp_style.css              # Home page styles
 |   │── /📂images                     # Website Images
 |   │── /📂js                         # javascripts  
-│── /📂templates                      # Templates (html files)
-|   │── /home_page.html
+│── /📂templates                      # html files
+│
 │── .gitignore
 │── LICENCE
 │── README.md
-│── app.py                            # Flask backend
-│── chromedriver.exe                  # Chrome driver application
+│── app.py                            
+│── chromedriver.exe                  
 │── docker-compose.yml                # airflow docker container configuration
-│── dockerfile                  # airflow image 
-│── requirements.txt                  # Python dependencies
-│── setup.py                          # Setup
+│── dockerfile                        # airflow image 
+│── requirements.txt                 
+│── setup.py                         
 ```
 
 <br>
