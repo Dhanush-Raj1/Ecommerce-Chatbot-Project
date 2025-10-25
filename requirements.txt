@@ -16,6 +16,7 @@ langchain-pinecone==0.2.2
 langchain-groq==0.2.4
 langgraph==0.2.70 
 Flask==2.2.4
+gunicorn     # for render deployment
 
 
 # for airflow, since we are using slim airflow image and it does not include the below module in it 
