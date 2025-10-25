@@ -3,7 +3,7 @@
 # pydantic==2.10.6
 # pydantic_core==2.27.2
 # pydantic-settings==2.7.1
-langchain-core==0.3.15
+langchain-core==0.3.29
 # langchain-community==0.3.15
 # # huggingface-hub==0.28.0
 langchain-nvidia-ai-endpoints==0.3.8
