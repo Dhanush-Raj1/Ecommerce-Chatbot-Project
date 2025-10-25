@@ -17,7 +17,7 @@ langchain-groq==0.2.4
 # other  dependencies
 # selenium==4.28.1  
 # amazoncaptcha==0.5.11
-# python-dotenv
+python-dotenv
 pandas==2.2.3
 numpy==1.26.4
 Flask==2.2.4
