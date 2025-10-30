@@ -17,6 +17,17 @@
 <h3 align="center"> End to End MLOps AI Agent Project: "Customer Service Chatbot for an Ecommerce Clothing Company"</h3>
 <h3 align="center">LLM-powered Ecommerce Chatbot with Apache Airflow Orchestration</h3>
 
+<br>
+
+## 🚀 Live Application
+🌐 The application is deployed and live   
+👉 [Access the web app here](https://ecommerce-chatbot-project.onrender.com)  
+  
+> [!NOTE]  
+> The web app may take 1-2 minutes to load. 
+  
+> [!TIP]  
+> For the best experience, please refer to the [Usage Guide](#-usage-guide) section below to learn how to navigate and use the web app effectively.
 
 
 <br>
@@ -189,7 +200,7 @@ Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manuall
 
 <br>
 
-# :triangular_flag_on_post: Working with the chatbot  
+# :triangular_flag_on_post Usage Guide  
 - Chat in natural language.  
 - Ask any kind of questions related to any products to the chatbot. Some products are listed in the website mention the product name or other details and ask further questions about the product.  
 - Make orders.  
