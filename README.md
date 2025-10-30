@@ -201,6 +201,9 @@ Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manuall
 <br>
 
 # 🌐 Usage Guide  
+> [!NOTE]
+> Click the icon on the bottom right of the screen to open the chatbot
+  
 - Chat in natural language:
     - "What are you capable of ?" 
 - Product Inquery:  Ask any kind of questions related to any products, some products are listed in the website, mention the product name or other details and ask further questions about the product
