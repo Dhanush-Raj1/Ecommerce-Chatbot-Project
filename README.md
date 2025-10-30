@@ -24,7 +24,7 @@
 👉 [Access the web app here](https://ecommerce-chatbot-project.onrender.com)  
   
 > [!NOTE]  
-> The web app may take 1-2 minutes to load. 
+> The initial load of the web app may take 1-2 minutes. Once loaded, refresh the page to ensure all features work correctly. 
   
 > [!TIP]  
 > For the best experience, please refer to the [Usage Guide](#-usage-guide) section below to learn how to navigate and use the web app effectively.
