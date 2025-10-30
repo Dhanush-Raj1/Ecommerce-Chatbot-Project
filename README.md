@@ -20,8 +20,9 @@
 <br>
 
 ## 🚀 Live Application
-🌐 The application is deployed and live   
-👉 [Access the web app here](https://ecommerce-chatbot-project.onrender.com)  
+🌐 The application is deployed and live
+  
+👉 [Access the web app here](https://ecommerce-chatbot-project.onrender.com)    
   
 > [!NOTE]  
 > The initial load of the web app may take 1-2 minutes. Once loaded, refresh the page to ensure all features work correctly. 
@@ -201,8 +202,11 @@ Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manuall
 <br>
 
 # 🌐 Usage Guide  
+
+👉 [Access the web app](https://ecommerce-chatbot-project.onrender.com)
+  
 > [!NOTE]
-> Click the icon on the bottom right of the screen to open the chatbot
+> After opening the web app, click the icon on the bottom right of the screen to open the chatbot  
   
 - Chat in natural language:
     - "What are you capable of ?" 
