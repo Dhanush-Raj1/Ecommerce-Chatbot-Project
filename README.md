@@ -201,12 +201,18 @@ Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manuall
 <br>
 
 # 🌐 Usage Guide  
-- Chat in natural language: "What are you capable of ?" 
-- Ask any kind of questions related to any products to the chatbot. Some products are listed in the website mention the product name or other details and ask further questions about the product: "Tell me about the product (product name and details)".
-- Make orders: "I want to purchase this product (product details)".  
-- Ask for invoice of your order: "Give me the invoice of my order".
-- Ask about your order and delivery details: "Tell me about my order and when will the order be delivered to my address?".
-- Ask for recommendation for example: Recommend me a shirt under the budget of rupees 1500.   
+- Chat in natural language:
+    - "What are you capable of ?" 
+- Product Inquery:  Ask any kind of questions related to any products, some products are listed in the website, mention the product name or other details and ask further questions about the product
+    - "Tell me about the product (product name and details)".
+- Make orders:
+    - "I want to purchase this product (product details)".  
+- Invoice details:
+    -  "Give me the invoice of my order".
+- Order tracking: Ask about the current status of your order
+    - "What is the current status of my order?".
+- Product recommendation:
+    -  "Recommend me a shirt under the budget of rupees 1500"
 
 <br>
 
