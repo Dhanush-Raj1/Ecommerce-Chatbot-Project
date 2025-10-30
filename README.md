@@ -206,7 +206,7 @@ Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manuall
 - Make orders: "I want to purchase this product (product details)".  
 - Ask for invoice of your order: "Give me the invoice of my order".
 - Ask about your order and delivery details: "Tell me about my order and when will the order be delivered to my address?".
-- Ask for recommendation for example: Recommend me a shirt under the budget of rupees 1000 but above rupees 500.   
+- Ask for recommendation for example: Recommend me a shirt under the budget of rupees 1500.   
 
 <br>
 
