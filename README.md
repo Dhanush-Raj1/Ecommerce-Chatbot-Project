@@ -197,7 +197,7 @@ The app will be available at: `http://127.0.0.1:5000/`
 docker-compose up --build
 ```
 
-Access the Airflow UI at `*http://localhost:8080/*` and trigger the DAGs manually or set a schedule for automation.
+Access the Airflow UI at `http://localhost:8080/` and trigger the DAGs manually or set a schedule for automation.
 
 <br>
 
