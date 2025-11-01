@@ -21,7 +21,10 @@ python-dotenv
 pandas==2.2.3
 numpy==1.26.4
 Flask==2.2.4
-gunicorn     # for render deployment
+
+
+# for production (aws ec2)
+gunicorn     
 
 
 # for airflow, since we are using slim airflow image and it does not include the below module in it 

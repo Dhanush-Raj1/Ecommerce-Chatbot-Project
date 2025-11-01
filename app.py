@@ -40,4 +40,8 @@ def chat():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader=False)        
+    # for local development 
+    # app.run(debug=True, use_reloader=False)
+
+    # for production
+    app.run(host='0.0.0.0', port=8000, debug=False)

@@ -176,3 +176,5 @@ cython_debug/
 rough/
 logs/
 My-Readme.md
+# key pair for ecommerce-chatbot instance 
+ecommerce-key.pem   
