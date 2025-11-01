@@ -190,14 +190,14 @@ GROQ_API_KEY=your_groq_api_key
 python app.py
 ```
 
-The app will be available at: **http://127.0.0.1:5000/**
+The app will be available at: http://127.0.0.1:5000/
 
 ### 6️⃣ Run airflow pipeline
 ```sh
 docker-compose up --build
 ```
 
-Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manually or set a schedule for automation.
+Access the Airflow UI at *http://localhost:8080/* and trigger the DAGs manually or set a schedule for automation.
 
 <br>
 
