@@ -22,7 +22,7 @@
 ## 🚀 Live Application
 🌐 The application is deployed and live
   
-👉 [Access the web app here](https://ecommerce-chatbot-project.onrender.com)    
+👉 [Access the web app here](http://18.61.60.152:8000/)    
   
 > [!NOTE]  
 > The initial load of the web app may take 1-2 minutes. Once loaded, refresh the page to ensure all features work correctly. 
@@ -190,20 +190,20 @@ GROQ_API_KEY=your_groq_api_key
 python app.py
 ```
 
-The app will be available at: **http://127.0.0.1:5000/**
+The app will be available at: `http://127.0.0.1:5000/`
 
 ### 6️⃣ Run airflow pipeline
 ```sh
 docker-compose up --build
 ```
 
-Access the Airflow UI at **http://localhost:8080/** and trigger the DAGs manually or set a schedule for automation.
+Access the Airflow UI at `http://localhost:8080/` and trigger the DAGs manually or set a schedule for automation.
 
 <br>
 
 # 🌐 Usage Guide  
 
-👉 [Access the web app](https://ecommerce-chatbot-project.onrender.com)
+👉 [Access the web app](http://18.61.60.152:8000/)
   
 > [!NOTE]
 > After opening the web app, click the icon on the bottom right of the screen to open the chatbot  
