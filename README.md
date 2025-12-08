@@ -22,7 +22,7 @@
 ## 🚀 Live Application
 🌐 The application is deployed and live
   
-👉 [Access the web app here](http://18.61.60.152:8000/)    
+👉 [Access the web app here](https://ecommerce-chatbot-project-0p27.onrender.com/)    
   
 > [!NOTE]  
 > The initial load of the web app may take 1-2 minutes. Once loaded, refresh the page to ensure all features work correctly. 
@@ -203,7 +203,7 @@ Access the Airflow UI at `http://localhost:8080/` and trigger the DAGs manually 
 
 # 🌐 Usage Guide  
 
-👉 [Access the web app](http://18.61.60.152:8000/)
+👉 [Access the web app](https://ecommerce-chatbot-project-0p27.onrender.com/)
   
 > [!NOTE]
 > After opening the web app, click the icon on the bottom right of the screen to open the chatbot  
