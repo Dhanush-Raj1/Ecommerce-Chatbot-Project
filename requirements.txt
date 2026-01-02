@@ -12,6 +12,8 @@ langchain-nvidia-ai-endpoints==0.3.8
 langchain-pinecone==0.2.2
 langchain-groq==0.2.4
 # langgraph==0.2.70 
+langchain_huggingface==0.3.1
+langchain-google-genai==2.1.12
 
 
 # other  dependencies
