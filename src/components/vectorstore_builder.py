@@ -6,6 +6,7 @@ from dataclasses import dataclass
 
 from langchain_community.document_loaders.csv_loader import CSVLoader
 from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
+from langchain_huggingface import HuggingFaceEndpointEmbeddings
 from pinecone import Pinecone, ServerlessSpec
 from langchain_pinecone import PineconeVectorStore
 from langchain.schema import Document
@@ -62,33 +63,64 @@ class VectorStoreBuilder:
             raise Custom_exception(e, sys)
     
 
-
-    def create_embeddings(self) -> NVIDIAEmbeddings:
-        try:
-            logging.info("Initializing NVIDIA Embeddings.")
-            embeddings = NVIDIAEmbeddings(
-                model="nvidia/nv-embedqa-mistral-7b-v2",
-                api_key=self.nvidia_api_key,
-                truncate="NONE")
+    # facing issues with NVIDIA embeddings from nvidia backend, switched to HF BGE embeddings 
+    # def create_embeddings(self) -> NVIDIAEmbeddings:
+    #     try:
+    #         logging.info("Initializing NVIDIA Embeddings.")
+    #         embeddings = NVIDIAEmbeddings(
+    #             model="NV-Embed-QA",   # nvidia/embed-qa-4    nvidia/nv-embedqa-mistral-7b-v2
+    #             api_key=self.nvidia_api_key,
+    #             truncate="NONE")
             
+    #         logging.info("Embeddings initialized successfully.")
+    #         return embeddings
+        
+    #     except Exception as e:
+    #         logging.error(f"Error initializing embeddings: {str(e)}")
+    #         raise Custom_exception(e, sys)
+
+
+
+    def create_embeddings(self) -> HuggingFaceEndpointEmbeddings:
+        try: 
+            logging.info("Initializing HF BGE Embeddings.")
+            embeddings = HuggingFaceEndpointEmbeddings(
+                model="BAAI/bge-small-en-v1.5",
+                huggingfacehub_api_token=os.getenv("HF_API_KEY"),
+            )
+
             logging.info("Embeddings initialized successfully.")
             return embeddings
         
         except Exception as e:
             logging.error(f"Error initializing embeddings: {str(e)}")
             raise Custom_exception(e, sys)
-    
+
+
+
+    def test_embeddings(self, embeddings: HuggingFaceEndpointEmbeddings):
+        try:
+            logging.info("Testing embeddings with sample text...")
+            test_text = "This is a test product description"
+            test_embedding = embeddings.embed_query(test_text)
+            logging.info(f"Test embedding dimension: {len(test_embedding)}")
+            logging.info("Embeddings test successful!")
+            return True
+        except Exception as e:
+            logging.error(f"Embeddings test failed: {str(e)}")
+            raise Custom_exception(e, sys)
+
 
 
     def create_vector_store(self, documents: List[Document], 
-                            embeddings: NVIDIAEmbeddings, 
-                            index_name: str = 'ecommerce-chatbot-project') -> PineconeVectorStore:
+                            embeddings: HuggingFaceEndpointEmbeddings, 
+                            index_name: str = 'rough') -> PineconeVectorStore: # ecommerce-chatbot-project
         try:
             logging.info(f"Connecting to Pinecone and creating index: {index_name}")
             pc = Pinecone(api_key=self.pinecone_api_key)
 
             pc.create_index(name=index_name,
-                             dimension = 4096,
+                             dimension = 384,    # 4096,   384 
                              metric="cosine",
                              spec=ServerlessSpec(cloud="aws",region="us-east-1"))
             
@@ -120,6 +152,7 @@ class VectorStoreBuilder:
             logging.info("Starting vectorstore pipeline")
             docs = self.load_data(self.vectorstore_builder_config.path)
             embeddings = self.create_embeddings()
+            self.test_embeddings(embeddings)
             vector_store = self.create_vector_store(docs, embeddings)
 
             logging.info("Vectorstore pipeline completed successfully")
@@ -132,6 +165,6 @@ class VectorStoreBuilder:
 
 
 
-# if __name__=="__main__":
-#     pipe = DataPipeline()
-#     pipe.run_pipeline(r"F:\Data Science\Projects\Ecommerce-Chatbot-Project\Data")
+if __name__=="__main__":
+    pipe = VectorStoreBuilder()
+    pipe.run_pipeline()
