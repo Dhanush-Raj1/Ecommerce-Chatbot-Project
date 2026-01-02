@@ -2,6 +2,7 @@ import os
 import sys
 from typing import Any
 
+from langchain_huggingface import HuggingFaceEndpointEmbeddings
 from langchain_nvidia import NVIDIAEmbeddings
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -28,21 +29,39 @@ class BuildRetrievalchain:
     def __init__(self):
         pass
 
-    def load_embeddings(self):
-        try:
-            logging.info("Initializing NVIDIA Embeddings.")
-            embeddings = NVIDIAEmbeddings(model="nvidia/nv-embedqa-mistral-7b-v2",
-                                        api_key=os.getenv("NVIDIA_API_KEY"),
-                                        truncate="NONE")
+
+
+    # def load_embeddings(self) -> NVIDIAEmbeddings:
+    #     try:
+    #         logging.info("Initializing NVIDIA Embeddings.")
+    #         embeddings = NVIDIAEmbeddings(model="nvidia/nv-embedqa-mistral-7b-v2",
+    #                                     api_key=os.getenv("NVIDIA_API_KEY"),
+    #                                     truncate="NONE")
                 
+    #         logging.info("Embeddings initialized successfully.")
+    #         return embeddings
+            
+    #     except Exception as e:
+    #         logging.error(f"Error initializing embeddings: {str(e)}")
+    #         raise Custom_exception(e, sys)
+
+
+
+    def load_embeddings(self) -> HuggingFaceEndpointEmbeddings:
+        try: 
+            logging.info("Initializing HF BGE Embeddings.")
+            embeddings = HuggingFaceEndpointEmbeddings(
+                model="BAAI/bge-small-en-v1.5",
+                huggingfacehub_api_token=os.getenv("HF_API_KEY"),
+            )
             logging.info("Embeddings initialized successfully.")
             return embeddings
-            
+
         except Exception as e:
             logging.error(f"Error initializing embeddings: {str(e)}")
             raise Custom_exception(e, sys)
 
-
+        
 
     def load_llm(self):
         try:
@@ -180,8 +199,8 @@ class BuildRetrievalchain:
 
     def load_vectorstore(self, embeddings):
         try:
-            logging.info("Loading vectorstore ")
-            vector_store = PineconeVectorStore.from_existing_index(index_name="ecommerce-chatbot-project",
+            logging.info("Loading vectorstore ")  
+            vector_store = PineconeVectorStore.from_existing_index(index_name="rough",           # ecommerce-chatbot-project
                                                                    embedding=embeddings)
 
             logging.info("Successfully loaded vectorstore")
