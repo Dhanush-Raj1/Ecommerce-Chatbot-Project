@@ -19,7 +19,7 @@
 
 <br>
 
-## 🚀 Live Application
+# 🚀 Live Application
 🌐 The application is deployed and live
   
 👉 [Access the web app here](https://ecommerce-chatbot-project-0p27.onrender.com/)    
