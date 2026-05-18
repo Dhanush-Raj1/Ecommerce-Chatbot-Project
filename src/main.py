@@ -1,7 +1,7 @@
 import sys 
 
 from src.components.data_collection import DataCollection
-from src.components.data_cleaning import DataCleaner
+from src.components.data_cleaner import DataCleaner
 from src.components.vectorstore_builder import VectorStoreBuilder
 from src.components.chatbot_builder import ChatbotBuilder
 
